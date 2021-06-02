@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+	 <header id="h-multi">
+        <a href="./index.html" id="button-return" style="width: 60px; height: 60px;" title="Voltar a página inicial">
+            <img src="./img/left-arrow.png" alt="Voltar a página inicial" style=" border-radius: 50%; width: 60px; height: 60px;">
+        </a>
+        
+        <input type="button" id="change-names-button" value="Mudar Nomes">
+    </header>
+    
+    <main>
+	    <section id="cards">
+		    <div class="player-card">
+			    <input class="player-name" id="player1" type="text" value="Player 1" max-lenght="9" readonly>
+			    
+			    <input class="players-score" id="score1" type="text" value="0" readonly>
+		    </div>
+		    
+		    <div class="player-card">
+			    <input class="player-name" id="player2" type="text" value="Player 2" max-lenght="9" readonly>
+			    
+			    <input class="players-score" id="score2" type="text" value="0" readonly>
+		    </div>
+	    </section>
+	    
+	    <section id="blackboard">
+	      <div id="board">
+	        <div class="board-content">
+		        <div id="doll">
+			        <input type="text" read-only id="doll-head"><br>
+			        <input type="text" read-only class="doll-arm">
+			        <input type="text" read-only id="doll-body">
+			        <input type="text" read-only class="doll-arm" ><br>
+			        <input type="text" read-only class="doll-leg">
+			        <input type="text" read-only class="doll-leg" >
+		        </div>
+		        
+		        <div id="tips">
+			        <label id="tips-id">DICA:<label><br>
+			        <input type="text" read-only id="tips-value">
+		        </div>
+	        </div>
+	      
+	        <div class="board-content">
+		        <input class="chars" read-only max-lenght="1" value="B">
+		        <input class="chars" read-only max-lenght="1" value="R">
+		        <input class="chars" read-only max-lenght="1" value="A">
+		        <input class="chars" read-only max-lenght="1" value="Z">
+		        <input class="chars" read-only max-lenght="1" value="I">
+		        <input class="chars" read-only max-lenght="1" value="L">
+	        </div>
+	    </section>
+	    
+	    <section id="keyboard">
+		    <div id="buttons">
+			    <input type="button" class="keychar" read-only value="A">
+			    <input type="button" class="keychar" read-only value="B">
+			    <input type="button" class="keychar" read-only value="C">
+			    <input type="button" class="keychar" read-only value="D"><br>
+			    <input type="button" class="keychar" read-only value="E">
+			    <input type="button" class="keychar" read-only value="F">
+			    <input type="button" class="keychar" read-only value="G">
+			    <input type="button" class="keychar" read-only value="H"><br>
+			    <input type="button" class="keychar" read-only value="I">
+			    <input type="button" class="keychar" read-only value="J">
+			    <input type="button" class="keychar" read-only value="K">
+			    <input type="button" class="keychar" read-only value="L"><br>
+			    <input type="button" class="keychar" read-only value="M">
+			    <input type="button" class="keychar" read-only value="N">
+			    <input type="button" class="keychar" read-only value="O">
+			    <input type="button" class="keychar" read-only value="P"><br>
+			    <input type="button" class="keychar" read-only value="Q">
+			    <input type="button" class="keychar" read-only value="R">
+			    <input type="button" class="keychar" read-only value="S">
+			    <input type="button" class="keychar" read-only value="T"><br>
+			    <input type="button" class="keychar" read-only value="U">
+			    <input type="button" class="keychar" read-only value="V">
+			    <input type="button" class="keychar" read-only value="W">
+			    <input type="button" class="keychar" read-only value="X"><br>
+			    <input type="button" class="keychar" read-only value="Y">
+			    <input type="button" class="keychar" read-only value="Z">
+		    </div>
+	    </section>
+	 </main>
+	</body>
+</html>

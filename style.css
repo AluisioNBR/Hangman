@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0099FF;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+header {
+  color: white;
+	background-color: #0010FF;
+}
+
+nav#space-buttons{
+    margin-left: 28rem;
+}
+
+.button{
+  color: white;
+  background-color: #00E0CB;
+
+    margin: 5rem 0%;
+    
+    padding: 3.5rem;
+
+    border-radius: 15%;
+    
+    font-size: 2rem;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+
+    width: 52%;
+}
+
+.button:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #00FFBA;
+}
+
+#atent{
+    color: red
+}
+
+/*########################################*/
+
+#h-multi {
+  display: flex;
+  align-items: center;
+}
+
+#button-return{
+    background-color: #00FFBA;
+    border-radius: 50%;
+    margin: 8px;
+    margin-right: auto;
+}
+
+#button-return:hover{
+    background-color: #00E0CB;
+}
+
+#button-return:active{
+    background-color: rgba(0, 102, 255, 0.76);
+}
+
+#change-names-button {
+	padding: .5rem;
+	font-size: 2.25rem;
+	margin-right: .5rem;
+}
+
+main {
+	display: flex;
+}
+
+#cards {
+	width: 15%;
+}
+
+.player-name, .players-score {
+	text-align: center;
+	font-size: 2rem;
+	width: 90%;
+}
+
+.player-name {
+	margin-top:2rem;
+}
+
+#player1 {
+	background-color: red;
+	color: white;
+}
+
+#player2 {
+	background-color: blue;
+	color: white;
+}
+
+.board-content {
+	display: flex;
+	align-items: center;
+}
