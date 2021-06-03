@@ -20,6 +20,7 @@
     </header>
     
     <main>
+      <section id="principal">
 	    <section id="cards">
 		    <div class="player-card">
 			    <input class="player-name" id="player1" type="text" value="Player 1" max-lenght="9" readonly>
@@ -38,27 +39,27 @@
 	      <div id="board">
 	        <div class="board-content">
 		        <div id="doll">
-			        <input type="text" read-only id="doll-head"><br>
-			        <input type="text" read-only class="doll-arm">
-			        <input type="text" read-only id="doll-body">
-			        <input type="text" read-only class="doll-arm" ><br>
-			        <input type="text" read-only class="doll-leg">
-			        <input type="text" read-only class="doll-leg" >
+			        <input type="text" readonly id="doll-head"><br>
+			        <input type="text" readonly class="doll-arm">
+			        <input type="text" readonly id="doll-body">
+			        <input type="text" readonly class="doll-arm" ><br>
+			        <input type="text" readonly class="doll-leg">
+			        <input type="text" readonly class="doll-leg" >
 		        </div>
 		        
 		        <div id="tips">
 			        <label id="tips-id">DICA:<label><br>
-			        <input type="text" read-only id="tips-value">
+			        <input type="text" readonly id="tips-value" value="País da América do Sul">
 		        </div>
 	        </div>
 	      
-	        <div class="board-content">
-		        <input class="chars" read-only max-lenght="1" value="B">
-		        <input class="chars" read-only max-lenght="1" value="R">
-		        <input class="chars" read-only max-lenght="1" value="A">
-		        <input class="chars" read-only max-lenght="1" value="Z">
-		        <input class="chars" read-only max-lenght="1" value="I">
-		        <input class="chars" read-only max-lenght="1" value="L">
+	        <div class="board-content" id="word">
+		        <input class="chars" readonly max-lenght="1" value="B">
+		        <input class="chars" readonly max-lenght="1" value="R">
+		        <input class="chars" readonly max-lenght="1" value="A">
+		        <input class="chars" readonly max-lenght="1" value="Z">
+		        <input class="chars" readonly max-lenght="1" value="I">
+		        <input class="chars" readonly max-lenght="1" value="L">
 	        </div>
 	    </section>
 	    
@@ -67,30 +68,31 @@
 			    <input type="button" class="keychar" read-only value="A">
 			    <input type="button" class="keychar" read-only value="B">
 			    <input type="button" class="keychar" read-only value="C">
-			    <input type="button" class="keychar" read-only value="D"><br>
+			    <input type="button" class="keychar" read-only value="D">
 			    <input type="button" class="keychar" read-only value="E">
 			    <input type="button" class="keychar" read-only value="F">
 			    <input type="button" class="keychar" read-only value="G">
-			    <input type="button" class="keychar" read-only value="H"><br>
+			    <input type="button" class="keychar" read-only value="H">
 			    <input type="button" class="keychar" read-only value="I">
 			    <input type="button" class="keychar" read-only value="J">
 			    <input type="button" class="keychar" read-only value="K">
-			    <input type="button" class="keychar" read-only value="L"><br>
+			    <input type="button" class="keychar" read-only value="L">
 			    <input type="button" class="keychar" read-only value="M">
 			    <input type="button" class="keychar" read-only value="N">
 			    <input type="button" class="keychar" read-only value="O">
-			    <input type="button" class="keychar" read-only value="P"><br>
+			    <input type="button" class="keychar" read-only value="P">
 			    <input type="button" class="keychar" read-only value="Q">
 			    <input type="button" class="keychar" read-only value="R">
 			    <input type="button" class="keychar" read-only value="S">
-			    <input type="button" class="keychar" read-only value="T"><br>
+			    <input type="button" class="keychar" read-only value="T">
 			    <input type="button" class="keychar" read-only value="U">
 			    <input type="button" class="keychar" read-only value="V">
 			    <input type="button" class="keychar" read-only value="W">
-			    <input type="button" class="keychar" read-only value="X"><br>
+			    <input type="button" class="keychar" read-only value="X">
 			    <input type="button" class="keychar" read-only value="Y">
 			    <input type="button" class="keychar" read-only value="Z">
 		    </div>
+	    </section>
 	    </section>
 	 </main>
 	</body>

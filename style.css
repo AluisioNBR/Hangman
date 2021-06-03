@@ -57,6 +57,11 @@ a{
 
 /*########################################*/
 
+#principal {
+	margin: 2rem 0;
+	display: flex;
+}
+
 #h-multi {
   display: flex;
   align-items: center;
@@ -83,10 +88,6 @@ a{
 	margin-right: .5rem;
 }
 
-main {
-	display: flex;
-}
-
 #cards {
 	width: 15%;
 }
@@ -98,7 +99,7 @@ main {
 }
 
 .player-name {
-	margin-top:2rem;
+	margin-top:3rem;
 }
 
 #player1 {
@@ -111,7 +112,140 @@ main {
 	color: white;
 }
 
+#blackboard {
+	width: 70%; 
+}
+
+#board {
+	width: 100%;
+	padding: 4rem 2rem;
+	border: 8px solid #2F0807;
+	
+	color: white;
+	background-color: #268A00;
+}
+
 .board-content {
 	display: flex;
 	align-items: center;
+	margin: 2% 0;
+}
+
+#doll {
+	width:50%;
+}
+
+#doll-head {
+	width: 6%;
+}
+
+#doll-body, .doll-arm, .doll-leg {
+  display: inline-block;
+
+	width: 8%;
+	height: 2rem;
+}
+
+.doll-arm, .doll-leg {
+	width: 3.5%;
+}
+
+#tips-id {
+	font-size: 1.5rem;
+}
+
+#tips-value {
+  color: white;
+	background-color: #268A00;
+
+  text-align: center;
+	font-size: 1.5rem;
+	
+	width: 100%;
+	border: none;
+}
+
+.chars {
+	width: 2.5rem; 
+	height: 3.5rem;
+	
+	font-size: 3rem;
+	text-align: center;
+	color: white;
+	background-color: #268A00;
+	
+	border: none;
+	border-bottom: 2px solid white;
+	margin: 2px;
+}
+
+#keyboard {
+	width: 25%;
+}
+
+.board-content#word {
+	display: flex; 
+	flex-direction: row;
+	align-items: center;
+	justify-content: center:
+}
+
+.keychar {
+	width: 23%;
+	height: 3rem; 
+	font-size: 2.5rem;
+	
+	
+}
+
+@media (max-width: 720px){
+	 h1#title{
+        font-size: 2.5rem;
+    }
+
+    nav#space-buttons{
+        width: 90%;
+        margin-left: 5rem;
+    }
+    
+    .button{
+        background-color: yellow;
+        
+        width: 125%;
+
+        margin: 7rem 0%;
+        
+        padding: 1rem;
+    
+        border-radius: 15%;
+        
+        font-size: 1.8rem;
+    }
+    
+/*################################################*/
+
+    a#change-name-button{
+        width: 45%;
+    }
+
+    #principal-area{
+        display: block;
+    }
+
+    #score{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 0%;
+    }
+
+    input.score-name, input.score-point{
+        margin-bottom: 2px;
+    
+        width: 85%;
+        height: 2rem;
+    
+        font-size: 1.4rem;
+    }
 }
