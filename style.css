@@ -84,7 +84,8 @@ a{
 
 #change-names-button {
 	padding: .5rem;
-	font-size: 2.25rem;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2rem;
 	margin-right: .5rem;
 }
 
@@ -95,6 +96,7 @@ a{
 .player-name, .players-score {
 	text-align: center;
 	font-size: 2rem;
+	font-family: 'Poppins', sans-serif;
 	width: 90%;
 }
 
@@ -128,11 +130,12 @@ a{
 .board-content {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	margin: 2% 0;
 }
 
 #doll {
-	width:50%;
+	width:30%;
 }
 
 #doll-head {
@@ -151,14 +154,16 @@ a{
 }
 
 #tips-id {
+    font-family: 'Poppins', sans-serif;
 	font-size: 1.5rem;
 }
 
 #tips-value {
-  color: white;
+    color: white;
 	background-color: #268A00;
 
-  text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
 	font-size: 1.5rem;
 	
 	width: 100%;
@@ -169,6 +174,7 @@ a{
 	width: 2.5rem; 
 	height: 3.5rem;
 	
+	font-family: 'Poppins', sans-serif;
 	font-size: 3rem;
 	text-align: center;
 	color: white;
@@ -183,23 +189,16 @@ a{
 	width: 25%;
 }
 
-.board-content#word {
-	display: flex; 
-	flex-direction: row;
-	align-items: center;
-	justify-content: center:
-}
-
 .keychar {
 	width: 23%;
 	height: 3rem; 
 	font-size: 2.5rem;
-	
+	font-family: 'Poppins', sans-serif;
 	
 }
 
-@media (max-width: 720px){
-	 h1#title{
+@media (max-width: 720px){   
+	 h1{
         font-size: 2.5rem;
     }
 
@@ -208,44 +207,87 @@ a{
         margin-left: 5rem;
     }
     
-    .button{
-        background-color: yellow;
-        
+    .button{   
         width: 125%;
 
-        margin: 7rem 0%;
+        margin: 4rem 0%;
         
         padding: 1rem;
-    
-        border-radius: 15%;
         
         font-size: 1.8rem;
     }
     
 /*################################################*/
 
-    a#change-name-button{
-        width: 45%;
-    }
+    #change-names-button {
+    	padding: .25rem;
+    	font-size: 1.5rem;
+   }
 
-    #principal-area{
+    #principal{
+        margin: 0;
         display: block;
     }
 
-    #score{
+    #cards{
         display: flex;
         align-items: center;
         width: 100%;
-        margin-top: 20px;
-        margin-bottom: 0%;
     }
-
-    input.score-name, input.score-point{
-        margin-bottom: 2px;
     
+    .player-name, .players-score {
+    	font-size: 1.4rem;  
         width: 85%;
         height: 2rem;
+    }
+
+     .player-name {
+    	margin-top:.5rem;
+    }
     
-        font-size: 1.4rem;
+    .players-score{
+        margin-bottom: .5rem;
+    }
+    
+    #blackboard, #keyboard{
+        width: 100%;
+    }
+    
+    #board{
+        padding: 2rem .5rem;
+    }
+    
+    #doll-head {
+	    width: 25%;
+    }
+
+    #doll-body, .doll-arm, .doll-leg {
+    	width: 30%;
+    	height: 2rem;
+    }
+
+    .doll-arm, .doll-leg {
+    	width: 12%;
+    }
+    
+    #tips-id, #tips-value {
+    	font-size: 1rem;
+    }
+    
+    .chars {
+        margin-top: .5rem;
+    	width: 1.5rem; 
+    	height: 1.6rem;
+    	font-size: 2rem;
+    }
+    
+    #keyboard{
+        margin: .5rem 0;
+    }
+    
+    .keychar {
+    	width: 15.5%;
+    	height: 3rem; 
+    	font-size: 2rem;
     }
 }
