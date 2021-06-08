@@ -361,4 +361,12 @@ a{
     	height: 3rem; 
     	font-size: 2rem;
     }
+    
+    .modal-content{
+        width: 100%;
+    }
+    
+    .word-input, #next-word{
+        width: 85%;
+    }
 }
