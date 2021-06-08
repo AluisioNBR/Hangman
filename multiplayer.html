@@ -16,7 +16,7 @@
             <img src="./img/left-arrow.png" alt="Voltar a página inicial" style=" border-radius: 50%; width: 50px; height: 50px;">
         </a>
         
-        <input type="button" id="change-names-button" value="Mudar Nomes">
+        <input type="button" id="change-names-button" value="Mudar Nomes" onclick= "Modal.openNameSubmit()">
     </header>
     
     <main>
@@ -49,18 +49,11 @@
 		        
 		        <div id="tips">
 			        <label id="tips-id">DICA:<label><br>
-			        <input type="text" readonly id="tips-value" value="País da América do Sul">
+			        <input type="text" readonly id="tips-value" value="">
 		        </div>
 	        </div>
 	      
-	        <div class="board-content" id="word">
-		        <input class="chars" readonly max-lenght="1" value="B">
-		        <input class="chars" readonly max-lenght="1" value="R">
-		        <input class="chars" readonly max-lenght="1" value="A">
-		        <input class="chars" readonly max-lenght="1" value="Z">
-		        <input class="chars" readonly max-lenght="1" value="I">
-		        <input class="chars" readonly max-lenght="1" value="L">
-	        </div>
+	        <div class="board-content" id="word"></div>
 	    </section>
 	    
 	    <section id="keyboard">
@@ -95,5 +88,32 @@
 	    </section>
 	    </section>
 	 </main>
+	 
+	    <div class="modal active" id="modal-name-selection">
+            <div class="modal-content">
+               <p><small>(máx: 9 caracteres)</small></p>
+               <form action="" onsubmit="Form.nameSubmit(event)" >
+                    <input id="player1-name" class="name-input" type="text" maxlength="9" placeholder="Jogador 1" name="player1" title="Nome do Jogador 1" required>
+                    <br>
+                    <input id="player2-name" class="name-input" type="text" maxlength="9" placeholder="Jogador 2" name="player2" title="Nome do Jogador 2" required>
+                    <br>
+                    <input id="submit-names" type="submit" value="Enviar"  >
+                </form>
+            </div>
+      </div>
+
+      <div class="modal" id="modal-word-selection">
+            <div class="modal-content">
+                 <form action="" onsubmit="Form.wordSubmit(event)" >
+                        <input id="next-word" class="word-input" type="text" maxlength="12" placeholder="Palavra da Partida (máx: 12)" name="next-word" title="Palavra da Partida" required>
+                        <br>
+                        <input id="next-word-tips" class="word-input" type="text" maxlength="25" placeholder="Dica da Palavra (máx: 25)" name="next-word-tips" title=" Dica da Palavra" required>
+                        <br>
+                        <input id="submit-word" type="submit" value="Enviar"  >
+                </form>
+            </div>
+      </div>
+      
+     <script src="./script.js" type="text/JavaScript"></script>
 	</body>
 </html>
