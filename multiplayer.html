@@ -2,18 +2,17 @@
 <html lang="pt-br">
 	<head>
 	  <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiplayer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Multiplayer</title>
+		<link rel="stylesheet/less" type="text/css" href="styles.less" />
+        <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
 	</head>
 	
 	<body>
 	 <header id="h-multi">
-        <a href="./index.html" id="button-return" style="border-radius: 50%;width: 50px; height: 50px;" title="Voltar a página inicial">
-            <img src="./img/left-arrow.png" alt="Voltar a página inicial" style=" border-radius: 50%; width: 50px; height: 50px;">
+        <a href="./index.html" id="button-return" title="Voltar a página inicial">
+            <img src="./img/left-arrow.png" alt="Voltar a página inicial">
         </a>
         
         <input type="button" id="change-names-button" value="Mudar Nomes" onclick= "Modal.openNameSubmit()">
@@ -48,8 +47,19 @@
 		        </div>
 		        
 		        <div id="tips">
-			        <label id="tips-id">DICA:<label><br>
-			        <input type="text" readonly id="tips-value" value="">
+			        <h4 id="tips-id">DICA:</h4><br>
+			        <p type="text" id="tips-value">
+						É um país da America do Sul
+					</p>
+
+					<div id="word">
+						<div class="chars">B</div>
+						<div class="chars">R</div>
+						<div class="chars">A</div>
+						<div class="chars">S</div>
+						<div class="chars">I</div>
+						<div class="chars">L</div>
+					</div>
 		        </div>
 	        </div>
 	      
@@ -89,7 +99,7 @@
 	    </section>
 	 </main>
 	 
-	    <div class="modal active" id="modal-name-selection">
+	    <div class="modal" id="modal-name-selection">
         <div class="modal-content">
            <p><small>(máx: 9 caracteres)</small></p>
            <form>

@@ -1,0 +1,157 @@
+@import './global';
+
+#h-multi {
+    .flexAlignICenter();
+    justify-content: space-between;
+
+    background-color: #colors[@blue]
+}
+
+#principal {
+	.flexAlignICenter();
+    justify-content: center;
+    gap: 2rem;
+}
+
+#button-return{
+    background-color: #colors[@poolBlue];
+    border-radius: 50%;
+    margin: @smallMargin;
+
+    img {
+        border-radius: 50%;
+        width: 50px;
+        height: 40px;
+    }
+}
+
+#button-return:hover{
+    opacity: .8;
+}
+
+#button-return:active{
+    background-color: #colors[@activeBlue];
+}
+
+#change-names-button {
+    cursor: pointer;
+	padding: .5rem;
+	font-size: 1.5rem;
+	margin: @smallMargin;
+}
+
+#cards {
+    .flexAlignICenter();
+    justify-content: space-evenly;
+    flex-direction: column;
+
+	width: 25%;
+    height: 100%;
+}
+
+.player-name, .players-score {
+    cursor: default;
+	text-align: center;
+	font-size: 1.3rem;
+	width: 70%;
+}
+
+#player1 {
+	background-color: #colors[@red];
+	color: #colors[@white];
+}
+
+#player2 {
+	background-color: #colors[@blue];
+	color: #colors[@white];
+}
+
+#blackboard {
+	width: 50%; 
+}
+
+#board {
+	padding: 4rem 2rem;
+	border: @smallMargin solid #colors[@boardMargin];
+	
+	color: #colors[@white];
+	background-color: #colors[@boardBackground];
+}
+
+.board-content {
+	.flexAlignICenter();
+	justify-content: center;
+}
+
+#doll {
+	width: 30%;
+}
+
+#doll-head {
+	width: 1rem;
+    height: 1rem;
+}
+
+#doll-body, .doll-arm, .doll-leg {
+    display: inline-block;
+
+    height: 2rem;
+}
+
+#doll-body{
+    width: 1rem;
+}
+
+.doll-arm, .doll-leg {
+	width: .4rem;
+}
+
+#tips-id {
+	font-size: 1.2rem;
+}
+
+#tips-value {
+    color: #colors[@white];
+	background-color: #colors[@boardBackground];
+
+    text-align: center;
+	font-size: 1rem;
+	
+	width: 100%;
+	border: none;
+}
+
+#word{
+    .flexAlignICenter();
+    justify-content: space-evenly;
+}
+
+.chars {
+    cursor: default;
+
+	width: 1.5rem; 
+	height: 2.2rem;
+	
+	font-size: 1.8rem;
+	text-align: center;
+	color: inherit;
+	background-color: inherit;
+	
+	border-bottom: 2px solid #colors[@white];
+	margin: 2px;
+}
+
+#keyboard {
+	width: 25%;
+
+    #buttons{
+        width: 95%;
+    }
+}
+
+.keychar {
+    cursor: pointer;
+	width: 3rem;
+	height: 3rem; 
+	font-size: 2rem;
+}

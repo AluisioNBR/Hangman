@@ -10,8 +10,7 @@ main{
 }
 
 main, #initial-menu, #space-buttons{
-    display: flex;
-    align-items: center;
+    .flexAlignICenter();
     justify-content: space-evenly;
     flex-direction: column;
     gap: 2rem;
@@ -20,7 +19,7 @@ main, #initial-menu, #space-buttons{
 #initial-menu{
     background-color: #colors[@blue];
     padding: 1.2rem;
-    border: #colors[@defaultBorder];
+    border: @defaultBorder;
 }
 
 .button{
