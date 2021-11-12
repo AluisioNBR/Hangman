@@ -1,0 +1,45 @@
+@import './global';
+
+h1{
+    color: #colors[@white];
+    font-size: 2rem;
+}
+
+main{
+    height: inherit;
+}
+
+main, #initial-menu, #space-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#initial-menu{
+    background-color: #colors[@blue];
+    padding: 1.2rem;
+    border: #colors[@defaultBorder];
+}
+
+.button{
+    cursor: pointer;
+    color: #colors[@white];
+    background-color: #colors[@poolBlue];
+
+    padding: 2rem;
+    border-radius: 15%;
+    
+    font-size: 1.5rem;
+}
+
+.button:hover{
+    opacity: .9;
+}
+
+#atent{
+    color: #colors[@red];
+}
+
+/*########################################*/
